@@ -1,0 +1,59 @@
+AngularJS :-
+-	AngularJS is a MVC style JavaScript Framework for creating Single Page Application (SPA) in the projects.
+-	Additional content brought into the web page without refresh.
+-	AngularJS is open source and licensed under the Apache license version 2.0.
+-	It is now maintained by Google. Its latest version is 1.X.
+
+
+Features :-
+-	Data-binding	:	It is the automatic synchronization of data between model and view components.
+-	Directives	:	Directives are markers on DOM elements (such as elements, attributes, css, and more). 
+					These can be used to create custom HTML tags that serve as new, custom widgets. AngularJS has built-in directives (ngBind, ngModel...)
+-	Templates	:	These are the rendered view with information from the controller and model. 
+					These can be a single file (like index.html) or multiple views in one page using "partials".
+-	Filters		:	These select a subset of items from an array and returns a new array.
+-	Dependency Injection	:	AngularJS has a built-in dependency injection subsystem that helps the developer by making the
+								application easier to develop, understand, and test.
+				
+				
+Disadvantages of AngularJS :-
+-	Not Secure	:	Being JavaScript only framework, application written in AngularJS are not safe. 
+					Server side authentication and authorization is must to keep an application secure.
+-	Not degradable	:	 If your application user disables JavaScript then user will just see the basic page and nothing more.
+
+
+Directive :-
+-	AngularJS directives are used to extend HTML. 
+-	These are special attributes starting with ng- prefix.
+1)	ng-app	:	This directive defines and links an AngularJS application to HTML.
+				Every thing inside this is angular application.
+2)	ng-model:	This directive binds the values of AngularJS application data to HTML input controls.
+3)	ng-bind	:	This directive binds the AngularJS Application data to HTML tags.
+4)	ng-init :	This directive initializes application data.
+5)	ng-repeat : This directive repeats html elements for each item in a collection. (foreach loop)
+6)	ng-controller
+7)  ng-include : include other page. Ex: <header ng-include="'header.html'"></header>
+8)	ng-show ng-hide	:	show hide
+9)	ng-click : onclick event fire
+10)	ng-submit
+
+Expressions :-
+-	Expressions are used to bind application data to html. 
+-	Expressions are written inside double braces like {{expression}}. 
+-	Expressions behaves in same way as ng-bind directives.
+-	AngularJS application expressions are pure javascript expressions and outputs the data where they are used.
+
+
+Modules :-
+-	Modules are used to separate logics say services, controllers, application etc. and keep the code clean. 
+-	We define modules in separate js files and name them as per the module.js file.
+
+
+Controllers :-
+-	AngularJS application mainly relies on controllers to control the flow of data in the application. 
+-	controller is defined using ng-controller directive. 
+-	A controller is a JavaScript object containing attributes/properties and functions. 
+-	Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.
+
+
+

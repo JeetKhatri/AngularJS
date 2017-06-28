@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myfilter">
+  <head>
+    <title>Angular Playlist</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+	  <script src = "app\lib\angular.min.js"></script>
+    <script src = "app\filterController.js"></script>
+  </head>
+  <body>
+    <br>
+    <div ng-controller="filterController">
+    <h3>{{message}}</h3>
+    <ul>
+      <li ng-repeat="s in students | orderBy : 'id'">{{s}}&emsp;-&emsp;{{s.name | uppercase}}</li>
+    </ul>
+    <h3>Currency</h3>
+    <ul>
+      <li ng-repeat="s in students  | orderBy : '-id'">{{s}}&emsp;-&emsp;{{s.id | currency}}&emsp;-&emsp;{{s.id | currency:"₹"}}</li>
+    </ul>
+  </div>
+  </body>
+</html>
