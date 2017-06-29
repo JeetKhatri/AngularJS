@@ -37,6 +37,7 @@ Directive :-
 9)	ng-click : onclick event fire
 10)	ng-submit
 11)	ng-src   : image path
+12)	ng-view
 
 
 
@@ -59,4 +60,4 @@ Controllers :-
 -	Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.
 
 
-
+Config is method which execute before your application start
