@@ -36,6 +36,9 @@ Directive :-
 8)	ng-show ng-hide	:	show hide
 9)	ng-click : onclick event fire
 10)	ng-submit
+11)	ng-src   : image path
+
+
 
 Expressions :-
 -	Expressions are used to bind application data to html. 
