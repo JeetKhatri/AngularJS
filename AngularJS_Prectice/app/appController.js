@@ -15,35 +15,8 @@ myApp.config(['$routeProvider',function($routeProvider){
     });
 }]);
 
-myApp.controller('myController',function($scope){
+myApp.controller('myController',function($scope,$http){
     $scope.message ="Welcome";
-    $scope.students = [
-      {
-        name : 'jeet',
-        id : 201612024,
-        isAvailable : true
-      },
-      {
-        name : 'harsh',
-        id : 201612043,
-        isAvailable : false
-      },
-      {
-        name : 'arpan',
-        id : 201612056,
-        isAvailable : false
-      },
-      {
-        name : 'sharvil',
-        id : 201612023,
-        isAvailable : true
-      },
-      {
-        name : 'avnish',
-        id : 201612038,
-        isAvailable : true
-      }
-    ];
 
     $scope.removeStudent = function(s){
       var rs = $scope.students.indexOf(s);
@@ -59,5 +32,9 @@ myApp.controller('myController',function($scope){
        $scope.newStudent.name="";
        $scope.newStudent.id="";
     };
+               // for success -> response, for error -> error
+    $http.get('data/students.json').then(function(response){
+      $scope.students = response.data;
+    });
 
   });

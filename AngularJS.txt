@@ -70,4 +70,15 @@ Views :-
 -	$routeProvider is the key service which set the configuration of urls,
 	and map them with the corresponding html page or ng-template, and attach a controller with the same.
 -	Config is method which execute before your application start.
--	
+-	ng-view   :   ng-view tag simply creates a place holder where a corresponding view can be placed based on the configuration.
+
+
+JSON & $http :-
+-	AngularJS provides $http control which works as a service to read data from the server/file. 
+-	The server makes a database call to get the desired records. 
+-	AngularJS needs data in JSON format. 
+-	Once the data is ready, $http can be used to get the data from server/file in the following manner −
+-	$http.get('data/students.json').then(function(response){
+      $scope.students = response.data;
+    });
+-	for success -> response, for error -> error
