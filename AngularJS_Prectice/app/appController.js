@@ -4,7 +4,8 @@ myApp.config(['$routeProvider',function($routeProvider){
 
   $routeProvider
     .when('/home',{
-      templateUrl: 'views/home.html'
+      templateUrl: 'views/home.html',
+      controller: 'myController'
     })
     .when('/directory',{
       templateUrl: 'views/directory.html',
@@ -14,6 +15,20 @@ myApp.config(['$routeProvider',function($routeProvider){
       redirectTo: '/home'
     });
 }]);
+
+myApp.directive('randomStudent',function(){
+  return{
+    restrict: 'E',
+    scope: {
+      students: "=",
+      title: "="                 // = for binding data
+    },
+    templateUrl: 'views/random.html',
+    controller:function($scope){
+      $scope.random = Math.floor(Math.random() * 5);
+    }
+  };
+});
 
 myApp.controller('myController',function($scope,$http){
     $scope.message ="Welcome";

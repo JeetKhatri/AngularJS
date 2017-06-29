@@ -5,7 +5,8 @@
 <input type="text" placeholder="Search here" ng-model="search" />
 <ul>
   <li ng-repeat="s in students | orderBy : order | filter:search">
-      <img ng-src="content/img/1.jpg" style="margin: -12px 10px 0 0; float: left; width: 50px;"/>
+      <img ng-src="{{s.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px;"
+      ng-show="s.thumb"/>
       <h3>{{s.name | uppercase}}</h3>
       <div class="remove" style="background:yellow" ng-click="removeStudent(s)">X</div>
       <span class="belt" style="background:green">{{s.id}}</span>

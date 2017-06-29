@@ -71,7 +71,7 @@ Views :-
 	and map them with the corresponding html page or ng-template, and attach a controller with the same.
 -	Config is method which execute before your application start.
 -	ng-view   :   ng-view tag simply creates a place holder where a corresponding view can be placed based on the configuration.
-
+-	In javascript ng-route convert into camel case like ngRoute
 
 JSON & $http :-
 -	AngularJS provides $http control which works as a service to read data from the server/file. 
@@ -82,3 +82,11 @@ JSON & $http :-
       $scope.students = response.data;
     });
 -	for success -> response, for error -> error
+
+
+Custom Directives :-
+-	In javascript random-student convert into camel case like randomStudent	
+-	restrict : 'E' or 'A' or 'C' or 'M'
+-	E for element(inside html <random-student>), A for attribute(inside html like ng-src), C for css, M for comment
+-	Custom directives are used in AngularJS to extend the functionality of HTML. 
+-	Custom directives are defined using "directive" function. 

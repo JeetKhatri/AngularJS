@@ -1,21 +1,26 @@
 [{
 	"name": "jeet",
 	"id": 201612024,
-	"isAvailable": true
+	"isAvailable": true,
+	"thumb": "content/img/1.jpg"
 }, {
 	"name": "harsh",
 	"id": 201612043,
-	"isAvailable": false
+	"isAvailable": false,
+	"thumb": "content/img/2.jpg"
 }, {
 	"name": "arpan",
 	"id": 201612056,
-	"isAvailable": false
+	"isAvailable": false,
+	"thumb": "content/img/3.jpg"
 }, {
 	"name": "sharvil",
 	"id": 201612023,
-	"isAvailable": true
+	"isAvailable": true,
+	"thumb": "content/img/4.jpg"
 }, {
 	"name": "avnish",
 	"id": 201612038,
-	"isAvailable": true
+	"isAvailable": true,
+	"thumb": "content/img/5.jpg"
 }]
