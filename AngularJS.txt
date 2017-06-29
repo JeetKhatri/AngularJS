@@ -36,8 +36,11 @@ Directive :-
 8)	ng-show ng-hide	:	show hide
 9)	ng-click : onclick event fire
 10)	ng-submit
-11)	ng-src   : image path
-12)	ng-view
+11)	ng-src	:	image path
+12)	ng-view	:	ng-view tag simply creates a place holder where a corresponding view can be placed based on the configuration.
+13)	ng-template	:	this is used to create an html view using script tag. 
+					Just like <a href> tag generate like
+					It contains "id" attribute which is used by $routeProvider to map a view with a controller.
 
 
 
@@ -58,6 +61,13 @@ Controllers :-
 -	controller is defined using ng-controller directive. 
 -	A controller is a JavaScript object containing attributes/properties and functions. 
 -	Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.
+-	$Scope is a special javascript object which plays the role of joining controller with the views.
+-	Scope contains the model data. In controllers, model data is accessed via $scope object.
 
-
-Config is method which execute before your application start
+Views :-
+-	AngularJS supports Single Page Application via multiple views on a single page. 
+-	To do this AngularJS has provided ng-view and ng-template directives and $routeProvider services.
+-	$routeProvider is the key service which set the configuration of urls,
+	and map them with the corresponding html page or ng-template, and attach a controller with the same.
+-	Config is method which execute before your application start.
+-	
