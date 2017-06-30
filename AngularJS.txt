@@ -41,6 +41,8 @@ Directive :-
 13)	ng-template	:	this is used to create an html view using script tag. 
 					Just like <a href> tag generate like
 					It contains "id" attribute which is used by $routeProvider to map a view with a controller.
+14)	ng-transclude	:	transclude automatic false so not display anything inside <random-student> tag.
+						when we write true so display it and also hase to write ng-transclude where we want to display it.
 
 
 
@@ -90,3 +92,6 @@ Custom Directives :-
 -	E for element(inside html <random-student>), A for attribute(inside html like ng-src), C for css, M for comment
 -	Custom directives are used in AngularJS to extend the functionality of HTML. 
 -	Custom directives are defined using "directive" function. 
+-	ng-transclude : transclude automatic false so not display anything inside <random-student> tag.
+					when we write true so display it and also hase to write ng-transclude where we want to display it.
+-	replace  :  when we do this it replace <random-student> with outermost tag of random page, check in insepect element
