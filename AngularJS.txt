@@ -43,7 +43,7 @@ Directive :-
 					It contains "id" attribute which is used by $routeProvider to map a view with a controller.
 14)	ng-transclude	:	transclude automatic false so not display anything inside <random-student> tag.
 						when we write true so display it and also hase to write ng-transclude where we want to display it.
-
+25)	ng-disabled		:	work as ng-show
 
 
 Expressions :-
@@ -111,15 +111,15 @@ Animation :-
 
 
 Validation :-
--	form classes:   (check it in inpect element)
-	1)	ng-pristine	: no text entered into it
-	2)	ng-dirty	: type some text
-	3)	ng-untouched	:	not even touched  (no need to write)
-	4)	ng-touched		:	click it and click away 
-	5)	ng-valid		:	input valid like valid email
-	6)	ng-invalid		:	reverse of valid
+-	form classes	:	properties	:  (check it in inpect element)
+	1)	ng-pristine		:	$pristine	:	no text entered into it
+	2)	ng-dirty		:	$dirty		:	type some text
+	3)	ng-untouched	:	$untouched	:	not even touched  (no need to write)
+	4)	ng-touched		:	$touched	:	click it and click away 
+	5)	ng-valid		:	$valid		:	input valid like valid email
+	6)	ng-invalid		:	$invalid	:	reverse of valid
 -	<form name="contactForm" novalidate> : novalidate tells html that do not validate the form because it is validate by angular
 -	In html we use required for field, in angular we use ng-required
-
-
+-	Ex: contactForm.name.$touched get true or false
+-	<input type="submit" value="Send" ng-disabled="contactForm.$invalid"/> while the form data is invalid it will disable button
 
