@@ -3,7 +3,7 @@
 <button ng-click="order='name'">Order by Name</button>
 <button ng-click="order='id'">Order by id</button>
 <input type="text" placeholder="Search here" ng-model="search" />
-<ul>
+<ul id="student-list">
   <li ng-repeat="s in students | orderBy : order | filter:search">
       <img ng-src="{{s.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px;"
       ng-show="s.thumb"/>

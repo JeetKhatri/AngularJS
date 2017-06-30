@@ -95,3 +95,15 @@ Custom Directives :-
 -	ng-transclude : transclude automatic false so not display anything inside <random-student> tag.
 					when we write true so display it and also hase to write ng-transclude where we want to display it.
 -	replace  :  when we do this it replace <random-student> with outermost tag of random page, check in insepect element
+
+Animation :-
+-	main.ng-enter {
+		transition:0.5s linear all;
+		opacity:0;
+	}
+	main.ng-enter.ng-enter-active {
+		opacity:1;
+	}
+-	here main is view in index.html page
+-	While entering animation for exit animation ng-leave
+-	For animation ngAnimate dependency add in appController.js

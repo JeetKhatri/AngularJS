@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp',['ngRoute']);
+var myApp = angular.module('myApp',['ngRoute','ngAnimate']);
 
 myApp.config(['$routeProvider',function($routeProvider){
 
@@ -24,7 +24,7 @@ myApp.directive('randomStudent',function(){
       title: "="                 // = for binding data
     },
     templateUrl: 'views/random.html',        // transclude automatic false so not display anything inside <random-student> tag.
-    transclude: true,                        // when we write true so display it and also hase to write ng-transclude where we want to display it
+  //  transclude: true,                        // when we write true so display it and also hase to write ng-transclude where we want to display it
     replace: true,                       // when we do this it replace <random-student> with outermost tag of random page, check in insepect element
     controller:function($scope){
       $scope.random = Math.floor(Math.random() * 5);
