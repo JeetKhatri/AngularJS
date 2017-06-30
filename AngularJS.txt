@@ -107,3 +107,4 @@ Animation :-
 -	here main is view in index.html page
 -	While entering animation for exit animation ng-leave
 -	For animation ngAnimate dependency add in appController.js
+-	ng-leave-stagger : when delete all student using this ng-leave-stagger write animation 0.2 sec so delete one by one

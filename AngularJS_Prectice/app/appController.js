@@ -35,6 +35,10 @@ myApp.directive('randomStudent',function(){
 myApp.controller('myController',function($scope,$http){
     $scope.message ="Welcome";
 
+    $scope.removeAllStudent = function(){
+      $scope.students = [];
+    };
+
     $scope.removeStudent = function(s){
       var rs = $scope.students.indexOf(s);
       $scope.students.splice(rs,1);
