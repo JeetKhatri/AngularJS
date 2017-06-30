@@ -108,3 +108,18 @@ Animation :-
 -	While entering animation for exit animation ng-leave
 -	For animation ngAnimate dependency add in appController.js
 -	ng-leave-stagger : when delete all student using this ng-leave-stagger write animation 0.2 sec so delete one by one
+
+
+Validation :-
+-	form classes:   (check it in inpect element)
+	1)	ng-pristine	: no text entered into it
+	2)	ng-dirty	: type some text
+	3)	ng-untouched	:	not even touched  (no need to write)
+	4)	ng-touched		:	click it and click away 
+	5)	ng-valid		:	input valid like valid email
+	6)	ng-invalid		:	reverse of valid
+-	<form name="contactForm" novalidate> : novalidate tells html that do not validate the form because it is validate by angular
+-	In html we use required for field, in angular we use ng-required
+
+
+

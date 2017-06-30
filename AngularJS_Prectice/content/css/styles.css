@@ -56,6 +56,14 @@ main{
   overflow: hidden;
 }
 
+.content textarea{
+  width: 90%;
+  padding: 10px 5%;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 10px 0;
+}﻿
+
 .content button,
 .content input[type="submit"]{
   background: #fff;
@@ -165,4 +173,8 @@ main.ng-enter.ng-enter-active {
 
 #student-list li.ng-leave-stagger {
   transition-delay: 0.2s;
+}
+
+input.ng-invalid.ng-touched,textarea.ng-invalid.ng-touched{
+  border: 2px solid red;
 }

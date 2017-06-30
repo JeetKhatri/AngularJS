@@ -3,10 +3,13 @@ var myApp = angular.module('myApp',['ngRoute','ngAnimate']);
 myApp.config(['$routeProvider',function($routeProvider){
 
   $routeProvider
-    .when('/home',{
-      templateUrl: 'views/home.html',
-      controller: 'myController'
-    })
+  .when('/home',{
+    templateUrl: 'views/home.html',
+    controller: 'myController'
+  })
+  .when('/contact',{
+    templateUrl: 'views/contact.html'
+  })
     .when('/directory',{
       templateUrl: 'views/directory.html',
       controller: 'myController'
