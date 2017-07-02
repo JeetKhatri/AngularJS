@@ -65,6 +65,10 @@ Controllers :-
 -	Each controller accepts $scope as a parameter which refers to the application/module that controller is to control.
 -	$Scope is a special javascript object which plays the role of joining controller with the views.
 -	Scope contains the model data. In controllers, model data is accessed via $scope object.
+-	$rootScope is work same as $scope.
+-	$scope is local(use where we define) while $rootScope is global.(define in one controller, we can use it inside another con)
+-	$rootScope (define in one controller, we can use it inside another controller)
+
 
 Views :-
 -	AngularJS supports Single Page Application via multiple views on a single page. 

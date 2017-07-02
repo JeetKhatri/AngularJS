@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <title>Angular Playlist</title>
+    <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+	  <script src = "app\lib\angular.min.js"></script>
+    <script src = "app\1stController.js"></script>
+  </head>
+  <body ng-controller="2stController as mainctrl">
+    <br><br>                         <!-- ng-app,ng-model,ng-init are directives -->
+    <table align="center">          <!-- {{cost * quantity}} is Expression -->
+      <tr>
+        <td>Name : </td>                      <!-- below line and {{name}} both are known as 2way data binding -->
+        <td><input type="text" ng-model="mainctrl.student.firstname" placeholder="Enter your name" /></td>
+      </tr>
+    </table>
+    <br><br>
+    <div align="center">
+      <h3>{{mainctrl.message}} {{mainctrl.student.firstname}},</h3>
+      <p >Expense on Books : {{mainctrl.cost}}  Rs</p>
+       <p>Roll No: {{mainctrl.student.rollno}}</p>
+    </div>
+    <ul>
+      <li ng-repeat="m in mainctrl.names">{{m}}</li>
+    </ul>
+  </body>
+</html>
