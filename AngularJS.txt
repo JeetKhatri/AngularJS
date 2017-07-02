@@ -123,3 +123,8 @@ Validation :-
 -	Ex: contactForm.name.$touched get true or false
 -	<input type="submit" value="Send" ng-disabled="contactForm.$invalid"/> while the form data is invalid it will disable button
 
+
+
+
+*	table column header asc/desc order :-							
+	https://www.youtube.com/watch?v=hnKSv28dp_w&list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl&index=10

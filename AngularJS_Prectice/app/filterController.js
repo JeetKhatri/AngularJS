@@ -1,4 +1,15 @@
-myfilter = angular.module('myfilter',[]);
+var myfilter = angular.module('myfilter',[]);
+
+  myfilter.filter("availability",function(){
+    return function (availability){
+      switch(availability){
+      case 1:
+        return "Available";
+      case 2:
+        return "Not Available";
+     }
+   }
+  });
 
   myfilter.controller('filterController',function($scope){
     $scope.message ="Welcome";
@@ -6,27 +17,27 @@ myfilter = angular.module('myfilter',[]);
       {
         name : 'jeet',
         id : 201612024,
-        isAvailable : true
+        isAvailable : 1
       },
       {
         name : 'harsh',
         id : 201612043,
-        isAvailable : false
+        isAvailable : 2
       },
       {
         name : 'arpan',
         id : 201612056,
-        isAvailable : false
+        isAvailable : 2
       },
       {
         name : 'sharvil',
         id : 201612023,
-        isAvailable : true
+        isAvailable : 1
       },
       {
         name : 'avnish',
         id : 201612038,
-        isAvailable : true
+        isAvailable : 1
       }
     ];
 
